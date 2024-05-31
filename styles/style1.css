@@ -48,7 +48,7 @@ html {
   padding: 0;
 }
 
-form {
+.header__form {
   line-height: 2em;
   border-radius: 1em;
   float: right;
@@ -58,16 +58,16 @@ form {
   transition: all 1s linear;
 }
 
-form:hover {
+.header__form:hover {
   background: rgba(255, 255, 255, .5);
 }
 
-form:focus-within {
+.header__form:focus-within {
   border-radius: .5em;
   background: rgba(255, 255, 255, .5);
 }
 
-label, button {
+.header__label, button{
   order: -1;
   width: 2em;
   text-align: center;
@@ -75,7 +75,7 @@ label, button {
   transition: width 1s step-end;
 }
 
-input {
+.header__input {
   border: none;
   width: 0;
   padding: 0;
@@ -83,16 +83,16 @@ input {
   outline: none;
 }
 
-input {
+.header__input {
   transition: width 1s linear;
 }
 
-input:focus {
+.header__input:focus {
   width: 13em;
   padding-right: .25em;
 }
 
-form:focus-within input {
+.header__form:focus-within input {
   width: 9em;
 }
 
@@ -100,11 +100,11 @@ button {
   width: 0;
 }
 
-input:focus ~ button {
+.header__input:focus ~ button {
   width: 2em;
 }
 
-input:focus ~ label {
+.header__input:focus ~ label {
   width: 0;
 }
 

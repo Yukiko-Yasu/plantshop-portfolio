@@ -26,3 +26,11 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+//поиск
+
+document.querySelector('form').addEventListener('submit', function (e) {
+  e.preventDefault()
+  console.log("Search:", e.target.q.value)
+})

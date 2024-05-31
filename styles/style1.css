@@ -41,6 +41,73 @@ html {
   z-index: 999;
 }
 
+
+.search-btn {
+  border: 0;
+  background-color: #fff;
+  padding: 0;
+}
+
+form {
+  line-height: 2em;
+  border-radius: 1em;
+  float: right;
+  /* margin: .5em .5em .5em auto; */
+  overflow: hidden; /* некликабельные углы */
+  display: flex;  
+  transition: all 1s linear;
+}
+
+form:hover {
+  background: rgba(255, 255, 255, .5);
+}
+
+form:focus-within {
+  border-radius: .5em;
+  background: rgba(255, 255, 255, .5);
+}
+
+label, button {
+  order: -1;
+  width: 2em;
+  text-align: center;
+  overflow: hidden;
+  transition: width 1s step-end;
+}
+
+input {
+  border: none;
+  width: 0;
+  padding: 0;
+  background: transparent;
+  outline: none;
+}
+
+input {
+  transition: width 1s linear;
+}
+
+input:focus {
+  width: 13em;
+  padding-right: .25em;
+}
+
+form:focus-within input {
+  width: 9em;
+}
+
+button {
+  width: 0;
+}
+
+input:focus ~ button {
+  width: 2em;
+}
+
+input:focus ~ label {
+  width: 0;
+}
+
 .header__nav {
   /* position: sticky; */
   top: 0;
@@ -58,6 +125,10 @@ html {
 
 .header__item:first-child {
   margin-right: 40px;
+}
+
+.header__item:nth-child(2) {
+  margin-left: -5px;
 }
 
 .header__item {

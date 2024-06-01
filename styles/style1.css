@@ -41,6 +41,7 @@ html {
   z-index: 999;
 }
 
+/* Search-form */
 
 .search-btn {
   border: 0;
@@ -84,7 +85,7 @@ html {
 }
 
 .header__input {
-  transition: width 1s linear;
+  transition: width .5s linear;
 }
 
 .header__input:focus {
